@@ -14,6 +14,7 @@ $gill: 'Gill Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
 body {
 	font-family: $gill;
 	font-size: 18px;
+  line-height: 24px;
 	font-weight: 300;
 	color: black;
 	background-color: $French-grey;
@@ -26,16 +27,10 @@ body {
 	text-align: center;
 	margin: 50px auto;
 	width: 70%;
-	padding: 30px;
+	padding: 36px;
 
-  // Smaller devices
-  @media only screen and (max-width: 859px) {
-    // background-color: red;
-    width: 60%;
-  }
-
-  @media only screen and (min-width: 860px) {
-    // background-color: green;
+  // Larger devices
+  @media only screen and (min-width: 524px) {
     width: 400px;
   }
 }
@@ -43,14 +38,25 @@ body {
 // Base typography
 h1 {
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 36px;
 	font-weight: 300;
 }
+
+p > span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal;
+
+  @media only screen and (min-width: 860px) {
+    display: inline;
+  }
+} 
 
 // Inline links
 a {
 	&:link {
 		color: $Dark-brown;
+    transition: color .5s ease-out;
 	}
 
 	&:visited {
@@ -72,10 +78,10 @@ a {
 
 // Main Kennard Address
 address {
-  border-top: 2px solid $Dark-grey;
-  border-bottom: 2px solid $Dark-grey;
-  padding: 5px 0;
+  border-top: 2px solid $French-grey;
+  border-bottom: 2px solid $French-grey;
+  padding: 6px 0;
   display: inline-block;
   width: auto;
-  margin: 10px auto;
+  margin: 12px auto;
 }
