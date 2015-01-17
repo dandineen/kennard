@@ -1,0 +1,52 @@
+body {
+  font-family: "Gill Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  background-color: #C6C9C5; }
+
+.central {
+  border: 8px solid #AFB0AF;
+  background-color: white;
+  text-align: center;
+  margin: 50px auto;
+  width: 70%;
+  padding: 30px; }
+  @media only screen and (min-device-width: 459px) and (max-device-width: 779px) {
+    .central {
+      background-color: red;
+      width: 60%; } }
+  @media only screen and (min-device-width: 780px) and (max-device-width: 859px) {
+    .central {
+      background-color: blue;
+      width: 50%; } }
+  @media only screen and (min-device-width: 860px) {
+    .central {
+      background-color: green;
+      width: 70%; } }
+
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300; }
+
+a:link {
+  color: #7C6C5B; }
+a:visited {
+  color: #CBBAA8; }
+a:hover {
+  color: #CBBAA8; }
+a:active {
+  color: #CBBAA8; }
+a:focus {
+  color: #AFB0AF; }
+
+address {
+  border-top: 2px solid #AFB0AF;
+  border-bottom: 2px solid #AFB0AF;
+  padding: 5px 0;
+  display: inline-block;
+  width: auto;
+  margin: 10px auto; }
+
+/*# sourceMappingURL=kennard.css.map */
