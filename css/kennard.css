@@ -5,25 +5,19 @@ body {
   color: black;
   background-color: #C6C9C5; }
 
-.central {
+.focal-box {
   border: 8px solid #AFB0AF;
   background-color: white;
   text-align: center;
   margin: 50px auto;
   width: 70%;
   padding: 30px; }
-  @media only screen and (min-device-width: 459px) and (max-device-width: 779px) {
-    .central {
-      background-color: red;
+  @media only screen and (max-width: 859px) {
+    .focal-box {
       width: 60%; } }
-  @media only screen and (min-device-width: 780px) and (max-device-width: 859px) {
-    .central {
-      background-color: blue;
-      width: 50%; } }
-  @media only screen and (min-device-width: 860px) {
-    .central {
-      background-color: green;
-      width: 70%; } }
+  @media only screen and (min-width: 860px) {
+    .focal-box {
+      width: 400px; } }
 
 h1 {
   font-size: 24px;
