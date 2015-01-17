@@ -1,6 +1,7 @@
 body {
   font-family: "Gill Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 18px;
+  line-height: 24px;
   font-weight: 300;
   color: black;
   background-color: #C6C9C5; }
@@ -11,21 +12,27 @@ body {
   text-align: center;
   margin: 50px auto;
   width: 70%;
-  padding: 30px; }
-  @media only screen and (max-width: 859px) {
-    .focal-box {
-      width: 60%; } }
-  @media only screen and (min-width: 860px) {
+  padding: 36px; }
+  @media only screen and (min-width: 524px) {
     .focal-box {
       width: 400px; } }
 
 h1 {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 36px;
   font-weight: 300; }
 
+p > span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal; }
+  @media only screen and (min-width: 860px) {
+    p > span {
+      display: inline; } }
+
 a:link {
-  color: #7C6C5B; }
+  color: #7C6C5B;
+  transition: color .5s ease-out; }
 a:visited {
   color: #CBBAA8; }
 a:hover {
@@ -36,11 +43,11 @@ a:focus {
   color: #AFB0AF; }
 
 address {
-  border-top: 2px solid #AFB0AF;
-  border-bottom: 2px solid #AFB0AF;
-  padding: 5px 0;
+  border-top: 2px solid #C6C9C5;
+  border-bottom: 2px solid #C6C9C5;
+  padding: 6px 0;
   display: inline-block;
   width: auto;
-  margin: 10px auto; }
+  margin: 12px auto; }
 
 /*# sourceMappingURL=kennard.css.map */
